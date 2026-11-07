@@ -1,0 +1,22 @@
+# Dépendances Node
+node_modules/
+
+# Fichiers d'environnement & clés secrètes Turso Cloud
+.env
+.env.local
+.env.*.local
+
+# Fichiers temporaires SQLite WAL/SHM et bases de test
+*.db-wal
+*.db-shm
+tests/test_*.db
+backups/*.db
+
+# Dossiers système, Python et Vercel
+__pycache__/
+*.pyc
+.vercel/
+.DS_Store
+Thumbs.db
+
+inspirations/*.zip

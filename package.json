@@ -1,0 +1,25 @@
+{
+  "name": "mind-fortress-2027",
+  "version": "1.0.0",
+  "description": "MIND FORTRESS — Préparation au Championnat de Madagascar d'Échecs 2027 (SQLite Natif / Turso libSQL + Vercel)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "db:init": "node db/init.js",
+    "db:push-turso": "node db/push_to_turso.js",
+    "test:step1": "node tests/step1_db_turso.test.js",
+    "test:step2": "node tests/step2_valisoachess.test.js",
+    "test:step3": "node tests/step3_fsrs.test.js",
+    "test:step4": "node tests/step4_fide_clock.test.js",
+    "test:step5": "node tests/step5_lichess_sync.test.js",
+    "test:step6": "node tests/step6_scouting_openings.test.js",
+    "test:step7": "node tests/step7_analytics_deploy.test.js",
+    "test": "node tests/step1_db_turso.test.js && node tests/step2_valisoachess.test.js && node tests/step3_fsrs.test.js && node tests/step4_fide_clock.test.js && node tests/step5_lichess_sync.test.js && node tests/step6_scouting_openings.test.js && node tests/step7_analytics_deploy.test.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

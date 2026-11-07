@@ -1,0 +1,1144 @@
+[
+  {
+    "id": 1,
+    "code": "MF-01",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 2,
+    "title": "La dame s’invite",
+    "solution": "Dh5+ puis Dxf7# : mat sur la diagonale.",
+    "hint": "Regarde la case f7 uniquement défendue par le roi.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf7#"
+    ]
+  },
+  {
+    "id": 2,
+    "code": "MF-02",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Pression sur f7",
+    "solution": "Dxf7# force la décision immédiate sur f7.",
+    "hint": "La batterie Fou c4 + Dame h5 converge sur f7.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf7#"
+    ]
+  },
+  {
+    "id": 3,
+    "code": "MF-03",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 1,
+    "title": "La tour en embuscade",
+    "solution": "1. Te8# (Re8#) : mat du couloir, le roi n’a plus d’air.",
+    "hint": "La 8e traverse est entièrement libre.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Re8#"
+    ]
+  },
+  {
+    "id": 4,
+    "code": "MF-04",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Fourchette italienne",
+    "solution": "Cg5 menace Cxf7 (fourchette Dame d8 et Tour h8).",
+    "hint": "Quel saut de cavalier joint son attaque au fou c4 ?",
+    "side": "Blancs",
+    "solution_moves": [
+      "Ng5",
+      "d5",
+      "exd5"
+    ]
+  },
+  {
+    "id": 5,
+    "code": "MF-05",
+    "fen": "r2qkb1r/ppp2ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Le cavalier central",
+    "solution": "Cg5 met la pression sur f7 et prépare la fourchette.",
+    "hint": "Cible la case f7 avec deux pièces.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Ng5"
+    ]
+  },
+  {
+    "id": 6,
+    "code": "MF-06",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Le clouage naît",
+    "solution": "Fb5 cloue le cavalier c6 sur la diagonale du roi e8.",
+    "hint": "Développe le fou sur la diagonale a4-e8.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bb5"
+    ]
+  },
+  {
+    "id": 7,
+    "code": "MF-07",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Fou contre cavalier",
+    "solution": "Fb5 cloue le défenseur du pion e5, puis la pression monte.",
+    "hint": "Immobilise le cavalier c6 qui défend e5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bb5",
+      "a6",
+      "Ba4"
+    ]
+  },
+  {
+    "id": 8,
+    "code": "MF-08",
+    "fen": "8/5k2/8/8/8/4P3/5K2/8 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 1,
+    "title": "Le pion avance",
+    "solution": "Rf3 suivi de Rf4-e5 : pousser, soutenir, promouvoir.",
+    "hint": "Le roi doit précéder son pion en finale.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Kf3",
+      "Ke6",
+      "Kf4"
+    ]
+  },
+  {
+    "id": 9,
+    "code": "MF-09",
+    "fen": "8/2P5/8/8/8/5K2/8/4k3 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "tactique",
+    "diff": 2,
+    "title": "À un pas de la dame",
+    "solution": "c8=D+ : promotion immédiate avec gain décisif.",
+    "hint": "Le roi noir est trop loin pour empêcher la promotion.",
+    "side": "Blancs",
+    "solution_moves": [
+      "c8=Q"
+    ]
+  },
+  {
+    "id": 10,
+    "code": "MF-10",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Ne pas se faire surprendre",
+    "solution": "Fc4 ou d3 : un coup prophylactique solide sécurise le centre et le roi.",
+    "hint": "Prépare le petit roque rapidement.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bc4"
+    ]
+  },
+  {
+    "id": 11,
+    "code": "MF-11",
+    "fen": "r2q1rk1/ppp1ppbp/2n2np1/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQ - 0 1",
+    "theme": "defensiveMove",
+    "type": "calcul",
+    "diff": 4,
+    "title": "La case à surveiller",
+    "solution": "O-O suivi de c3/Te1 : le roque sécurise le roi et coupe les menaces centrales.",
+    "hint": "Mets le roi à l'abri avant d'ouvrir le centre.",
+    "side": "Blancs",
+    "solution_moves": [
+      "O-O",
+      "e6",
+      "c3"
+    ]
+  },
+  {
+    "id": 12,
+    "code": "MF-12",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "veryLong",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Le plan long",
+    "solution": "d3 puis c3 et Nbd2-f1-g3 : améliorer toutes les pièces avant de frapper.",
+    "hint": "Plan typique du Giuoco Piano / Espagnole : manœuvre du cavalier b1.",
+    "side": "Blancs",
+    "solution_moves": [
+      "d3",
+      "Bc5",
+      "c3"
+    ]
+  },
+  {
+    "id": 13,
+    "code": "MF-13",
+    "fen": "r2qkb1r/ppp1pppp/2n2n2/3p4/3P1B2/5N2/PPP1PPPP/RNBQK2R w KQkq - 0 1",
+    "theme": "veryLong",
+    "type": "calcul",
+    "diff": 5,
+    "title": "Finale technique",
+    "solution": "e3, c3, Fd3 : patience, chaque échange doit servir le contrôle des cases noires.",
+    "hint": "Construis la pyramide de pions d4-e3-c3.",
+    "side": "Blancs",
+    "solution_moves": [
+      "e3",
+      "e6",
+      "c3"
+    ]
+  },
+  {
+    "id": 14,
+    "code": "MF-14",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Mat en trois temps",
+    "solution": "Activation du roi et création d'un réseau de mat au bord.",
+    "hint": "Visualise comment enfermer le roi sur la 8e rangée.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Kf1"
+    ]
+  },
+  {
+    "id": 15,
+    "code": "MF-15",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 4,
+    "title": "L’attaque du roi",
+    "solution": "Fc4 suivi de Dh5 : ouvrir la diagonale a2-g8 puis viser f7/h7.",
+    "hint": "Combine fou et dame contre l'aile-roi.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bc4",
+      "Nf6",
+      "Qh5"
+    ]
+  },
+  {
+    "id": 16,
+    "code": "MF-16",
+    "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Première fourchette",
+    "solution": "d4 cxd4 Cxd4 : le cavalier centralisé rayonne et menace des fourchettes.",
+    "hint": "Ouvre le centre dans la Sicilienne.",
+    "side": "Blancs",
+    "solution_moves": [
+      "d4",
+      "cxd4",
+      "Nxd4"
+    ]
+  },
+  {
+    "id": 17,
+    "code": "MF-17",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Diagonale fatale",
+    "solution": "d3 suivi de Fg5 : le fou cloue le cavalier f6 qui protège d5 et la dame.",
+    "hint": "Une fois d3 joué, quel clouage gêne le plus les Noirs ?",
+    "side": "Blancs",
+    "solution_moves": [
+      "d3",
+      "d6",
+      "Bg5"
+    ]
+  },
+  {
+    "id": 18,
+    "code": "MF-18",
+    "fen": "8/pp3k2/8/8/8/8/PP3PPP/6K1 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 2,
+    "title": "Pions liés",
+    "solution": "f4, Rf2, g4, Rf3 : avancer la majorité à l'aile-roi en gardant la structure soudée.",
+    "hint": "Mobilise la majorité de 3 pions contre 0 à l'aile-roi.",
+    "side": "Blancs",
+    "solution_moves": [
+      "f4",
+      "Ke6",
+      "Kf2"
+    ]
+  },
+  {
+    "id": 19,
+    "code": "MF-19",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Protège ton centre",
+    "solution": "Cc3 défend e4 solidement : un coup de développement solide vaut mieux qu’une menace prématurée.",
+    "hint": "Le pion e4 est attaqué par Cf6.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nc3"
+    ]
+  },
+  {
+    "id": 20,
+    "code": "MF-20",
+    "fen": "r2qk2r/ppp1ppbp/2n2np1/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "veryLong",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Manœuvre silencieuse",
+    "solution": "Nbd2-f1-g3 : replacer la pièce la plus passive vers l'aile-roi.",
+    "hint": "Quelle pièce blanche sur la 1re rangée n'est pas encore développée ?",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nbd2",
+      "O-O",
+      "Nf1"
+    ]
+  },
+  {
+    "id": 21,
+    "code": "MF-21",
+    "fen": "5rk1/5ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Au bord de l’échiquier",
+    "solution": "Attention au mat du couloir : h3 ou g3 donne une case d'air vitale au roi.",
+    "hint": "Regarde la menace noire Tf1#.",
+    "side": "Blancs",
+    "solution_moves": [
+      "h3"
+    ]
+  },
+  {
+    "id": 22,
+    "code": "MF-22",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "theme": "mateIn3",
+    "type": "tactique",
+    "diff": 3,
+    "title": "La dame en chasse",
+    "solution": "Dxf7# : échec et mat direct sur la case faible f7.",
+    "hint": "La dame est soutenue par le fou c4.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf7#"
+    ]
+  },
+  {
+    "id": 23,
+    "code": "MF-23",
+    "fen": "rnbqkb1r/pp1ppppp/5n2/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Le cavalier de f3",
+    "solution": "e5 attaque le cavalier f6 et gagne de l'espace central (ou Cc3 solide).",
+    "hint": "Chasse le cavalier noir de sa case naturelle.",
+    "side": "Blancs",
+    "solution_moves": [
+      "e5",
+      "Nd5",
+      "Nc3"
+    ]
+  },
+  {
+    "id": 24,
+    "code": "MF-24",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Le clouage invisible",
+    "solution": "Fb5 cloue le cavalier c6 et prépare la pression sur e5.",
+    "hint": "La diagonale a4-e8 est ouverte.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bb5"
+    ]
+  },
+  {
+    "id": 25,
+    "code": "MF-25",
+    "fen": "8/4P3/8/8/8/5K2/8/4k3 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Promotion ou rien",
+    "solution": "e8=D+ suivi de De2+ : calculer la course des rois avant de pousser.",
+    "hint": "Promouvoir avec échec !",
+    "side": "Blancs",
+    "solution_moves": [
+      "e8=Q+"
+    ]
+  },
+  {
+    "id": 26,
+    "code": "MF-26",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 2,
+    "title": "La case faible",
+    "solution": "Cc3 défend le pion e4 avant que Cxe4 n'arrive.",
+    "hint": "Protège le pion central e4.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nc3"
+    ]
+  },
+  {
+    "id": 27,
+    "code": "MF-27",
+    "fen": "r2qkb1r/ppp1pppp/2n2n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "veryLong",
+    "type": "calcul",
+    "diff": 5,
+    "title": "Le marathon",
+    "solution": "c4 (Gambit Dame) ou Ff4 : un plan en trois phases (développement, contrôle de e5, pression c-file).",
+    "hint": "Attaque la base de la chaîne ou développe le fou hors de la chaîne.",
+    "side": "Blancs",
+    "solution_moves": [
+      "c4",
+      "e6",
+      "Nc3"
+    ]
+  },
+  {
+    "id": 28,
+    "code": "MF-28",
+    "fen": "6k1/5ppp/8/8/8/8/8/6K1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Le roi au coin",
+    "solution": "Visualiser le réseau de mat du couloir sur g8.",
+    "hint": "Les pions f7, g7, h7 forment un mur devant leur propre roi.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Kf1"
+    ]
+  },
+  {
+    "id": 29,
+    "code": "MF-29",
+    "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Le filet se resserre",
+    "solution": "Fc4 suivi de Df3/Dh5 : chaque menace rapproche le roi adverse de la faute.",
+    "hint": "Braque les pièces sur f7.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bc4",
+      "Bc5",
+      "Qh5"
+    ]
+  },
+  {
+    "id": 30,
+    "code": "MF-30",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Double attaque",
+    "solution": "Cc3 suivi de Fc4/Cg5 : attaquer deux cibles, l’adversaire n’en sauve qu’une.",
+    "hint": "Développe les cavaliers vers le centre.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nc3",
+      "Bc5",
+      "Bc4"
+    ]
+  },
+  {
+    "id": 31,
+    "code": "MF-31",
+    "fen": "r2qkb1r/ppp1pppp/2n2n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 1",
+    "theme": "pin",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Clouage absolu",
+    "solution": "e3 suivi de Fb5 : la pièce clouée en c6 ne peut plus bouger sans perdre le roi.",
+    "hint": "Prépare le clouage du cavalier c6.",
+    "side": "Blancs",
+    "solution_moves": [
+      "e3",
+      "e6",
+      "Bb5"
+    ]
+  },
+  {
+    "id": 32,
+    "code": "MF-32",
+    "fen": "8/ppP5/8/8/8/8/8/4K2k w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Le pion passé",
+    "solution": "c8=D : le pion c7 se transforme en Dame et contrôle la diagonale h3-c8.",
+    "hint": "Promouvoir immédiatement en c8.",
+    "side": "Blancs",
+    "solution_moves": [
+      "c8=Q"
+    ]
+  },
+  {
+    "id": 33,
+    "code": "MF-33",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "defensiveMove",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Tension maximale",
+    "solution": "c3 suivi de O-O : garder le calme et préparer d4 quand tout est tendu.",
+    "hint": "Contrôle la case d4 avec c3.",
+    "side": "Blancs",
+    "solution_moves": [
+      "c3",
+      "O-O",
+      "O-O"
+    ]
+  },
+  {
+    "id": 34,
+    "code": "MF-34",
+    "fen": "r2qk2r/ppp1ppbp/2n2np1/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+    "theme": "veryLong",
+    "type": "calcul",
+    "diff": 5,
+    "title": "La finale des rois",
+    "solution": "O-O, c3, Te1, Nbd2-f1 : plan profond de manœuvre positionnelle.",
+    "hint": "Consolide le centre avant l'expansion.",
+    "side": "Blancs",
+    "solution_moves": [
+      "O-O",
+      "O-O",
+      "c3"
+    ]
+  },
+  {
+    "id": 35,
+    "code": "MF-35",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 5,
+    "title": "Le coup de championnat",
+    "solution": "Dxf7# : frappe chirurgicale sur f7.",
+    "hint": "Vérifie les échecs qui sont aussi mat.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf7#"
+    ]
+  },
+  {
+    "id": 36,
+    "code": "P01",
+    "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 4 5",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Saut sur d5 & fourchette",
+    "solution": "1. Bg5 h6 2. Bxf6 Qxf6 3. Nd5 Qd8 4. c3",
+    "hint": "Élimine le défenseur de la case d5 avant d'y sauter avec le cavalier.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bg5",
+      "h6",
+      "Bxf6",
+      "Qxf6",
+      "Nd5",
+      "Qd8",
+      "c3"
+    ]
+  },
+  {
+    "id": 37,
+    "code": "P02",
+    "fen": "r2qkb1r/ppp2ppp/2n1bn2/3pp3/4P3/1NN5/PPPP1PPP/R1BQKB1R w KQkq - 2 6",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Pression centrale & fourchette",
+    "solution": "1. exd5 Nxd5 2. Qf3 Ndb4 3. Bb5+",
+    "hint": "Ouvre la colonne e et vise c6/f7.",
+    "side": "Blancs",
+    "solution_moves": [
+      "exd5",
+      "Nxd5",
+      "Qf3",
+      "Ndb4",
+      "Bb5"
+    ]
+  },
+  {
+    "id": 38,
+    "code": "P03",
+    "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Clouage Bg5 vers Nd5",
+    "solution": "1. Bg5 Be6 2. Nd5 Bxd5 3. Bxd5",
+    "hint": "Crée un clouage inconfortable sur f6.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bg5",
+      "Be6",
+      "Nd5",
+      "Bxd5",
+      "Bxd5"
+    ]
+  },
+  {
+    "id": 39,
+    "code": "P04",
+    "fen": "2rq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/2KR1B1R w - - 3 10",
+    "theme": "fork",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Dragon Sicilien — Saut Nd5",
+    "solution": "1. Nxc6 bxc6 2. e5 Nd5 3. Nxd5 cxd5",
+    "hint": "Échange en c6 puis pousse e5 pour ouvrir la diagonale.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nxc6",
+      "bxc6",
+      "e5",
+      "Nd5",
+      "Nxd5",
+      "cxd5"
+    ]
+  },
+  {
+    "id": 40,
+    "code": "P05",
+    "fen": "r1b2rk1/pp1p1ppp/1qn1pn2/2b5/2B1P3/2NP1N2/PPPB1PPP/R2Q1RK1 w - - 5 8",
+    "theme": "fork",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Trappe Na4 sur la Dame et le Fou",
+    "solution": "1. Na4 Bxf2+ 2. Rxf2 Qc7 3. Nc3",
+    "hint": "Le cavalier c3 peut attaquer simultanément la dame b6 et le fou c5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Na4",
+      "Bxf2+",
+      "Rxf2",
+      "Qc7",
+      "Nc3"
+    ]
+  },
+  {
+    "id": 41,
+    "code": "P06",
+    "fen": "r2q1rk1/1b1nbppp/p2p1n2/1pp1p3/4P3/1B1P1N1P/PPP2PP1/RNBQR1K1 w - - 0 10",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Manœuvre Espagnole Nbd2-f1",
+    "solution": "1. Nbd2 Rc8 2. Nf1 c4 3. Ng3",
+    "hint": "Achemine le cavalier b1 vers l'aile-roi via d2-f1.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nbd2",
+      "Rc8",
+      "Nf1",
+      "c4",
+      "Ng3"
+    ]
+  },
+  {
+    "id": 42,
+    "code": "P07",
+    "fen": "rn1qkbnr/ppp2ppp/8/3pp3/4P1b1/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 4",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Briser le clouage g4",
+    "solution": "1. h3 Bxf3 2. Qxf3 dxe4 3. Qxe4",
+    "hint": "Pose immédiatement la question au fou g4.",
+    "side": "Blancs",
+    "solution_moves": [
+      "h3",
+      "Bxf3",
+      "Qxf3",
+      "dxe4",
+      "Qxe4"
+    ]
+  },
+  {
+    "id": 43,
+    "code": "P08",
+    "fen": "r1bqk2r/ppp2ppp/2np1n2/4p1B1/1bB1P3/2NP1N2/PPP2PPP/R2QK2R w KQkq - 2 6",
+    "theme": "pin",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Clouage croisé O-O & Nd5",
+    "solution": "1. O-O Bxc3 2. bxc3 h6 3. Bh4",
+    "hint": "Mets le roi à l'abri tout en maintenant le clouage en g5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "O-O",
+      "Bxc3",
+      "bxc3",
+      "h6",
+      "Bh4"
+    ]
+  },
+  {
+    "id": 44,
+    "code": "P09",
+    "fen": "r2qk2r/ppp1bppp/2n1bn2/3pp1B1/8/2NP1NP1/PPP1PPBP/R2Q1RK1 w kq - 3 7",
+    "theme": "pin",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Pression sur le centre d5",
+    "solution": "1. Bxf6 Bxf6 2. e4 d4 3. Ne2",
+    "hint": "Élimine le cavalier f6 pour frapper le centre avec e4.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bxf6",
+      "Bxf6",
+      "e4",
+      "d4",
+      "Ne2"
+    ]
+  },
+  {
+    "id": 45,
+    "code": "P10",
+    "fen": "2kr3r/ppp1qppp/2np1n2/2b1p1B1/2B1P3/2NP1N1P/PPP2PP1/R2Q1RK1 w - - 1 9",
+    "theme": "pin",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Invasion en d5 sous clouage",
+    "solution": "1. Nd5 Nxd5 2. Bxd5 f6 3. Be3",
+    "hint": "Le cavalier f6 est cloué sur la dame e7 : saute en d5 !",
+    "side": "Blancs",
+    "solution_moves": [
+      "Nd5",
+      "Nxd5",
+      "Bxd5",
+      "f6",
+      "Be3"
+    ]
+  },
+  {
+    "id": 46,
+    "code": "P11",
+    "fen": "3q2k1/5ppp/8/8/8/5Q2/5PPP/6K1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Mat du couloir pur",
+    "solution": "1. Qa8+ Qf8 2. Qxf8#",
+    "hint": "La 8e rangée est fatale.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qa8",
+      "Qf8",
+      "Qxf8+"
+    ]
+  },
+  {
+    "id": 47,
+    "code": "P12",
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Mat de Legal / Écolier",
+    "solution": "1. Qxf7#",
+    "hint": "Regarde f7.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf7#"
+    ]
+  },
+  {
+    "id": 48,
+    "code": "P13",
+    "fen": "5rk1/pp3ppp/8/2Q5/1b6/2N5/PPP3PP/2KR4 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Sacrifice de déviation sur f8",
+    "solution": "1. Qxf8+ Bxf8 2. Rd8#",
+    "hint": "Défie la tour f8 pour libérer d8.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxf8+",
+      "Bxf8",
+      "Rd8"
+    ]
+  },
+  {
+    "id": 49,
+    "code": "P14",
+    "fen": "r4rk1/ppp2ppp/8/8/8/2B5/PPP2QPP/5RK1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Batterie Dame + Fou sur g7",
+    "solution": "1. Qf6 gxf6 2. Bxf6#",
+    "hint": "Utilise le fou c3 et la dame sur la grande diagonale.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qf6",
+      "gxf6",
+      "Bxf6"
+    ]
+  },
+  {
+    "id": 50,
+    "code": "P15",
+    "fen": "3r2k1/p4ppp/8/8/8/1B6/P4PPP/3R2K1 w - - 0 1",
+    "theme": "mateIn2",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Clouage de f7 et mat du couloir",
+    "solution": "1. Rxd8#",
+    "hint": "Le fou b3 cloue le pion f7, mais d8 est déjà fatal !",
+    "side": "Blancs",
+    "solution_moves": [
+      "Rxd8#"
+    ]
+  },
+  {
+    "id": 51,
+    "code": "P16",
+    "fen": "2kr4/ppp2ppp/8/8/8/5N2/PPP2PPP/2KR3R w - - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Doublage des tours sur colonne d",
+    "solution": "1. Rxd8+ Kxd8 2. Rd1+ Ke8 3. Rd8#",
+    "hint": "Échange la tour d8 et prends possession de la colonne ouverte.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Rxd8+",
+      "Kxd8",
+      "Rd1+",
+      "Ke8",
+      "Rd8+"
+    ]
+  },
+  {
+    "id": 52,
+    "code": "P17",
+    "fen": "6k1/5p1p/6pq/8/8/2B5/5PPP/4R1K1 w - - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Les cases noires affaiblies",
+    "solution": "1. Re8+ Qf8 2. Rxf8+ Kxf8 3. Bf6",
+    "hint": "Combine la tour e1 et le fou c3 sur la 8e traverse.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Re8+",
+      "Qf8",
+      "Rxf8+",
+      "Kxf8",
+      "Bf6"
+    ]
+  },
+  {
+    "id": 53,
+    "code": "P18",
+    "fen": "r1b2rk1/ppp2ppp/2n5/3q4/3P4/2PB4/P4PPP/R1BQ1RK1 w - - 0 11",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Sacrifice Grec Bxh7+",
+    "solution": "1. Bxh7+ Kxh7 2. Qh5+ Kg8 3. Qxd5",
+    "hint": "Sacrifice de fou sur h7 suivi d'un double échec/attaque sur d5 !",
+    "side": "Blancs",
+    "solution_moves": [
+      "Bxh7+",
+      "Kxh7",
+      "Qh5+",
+      "Kg8",
+      "Qxd5"
+    ]
+  },
+  {
+    "id": 54,
+    "code": "P19",
+    "fen": "1k1r4/pp3ppp/8/8/8/6P1/PP2PP1P/1K1R3R w - - 0 1",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Infiltration sur la 8e",
+    "solution": "1. Rxd8+ Kc7 2. Rhd1",
+    "hint": "Capture la tour d8 avec échec.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Rxd8+",
+      "Kc7",
+      "Rhd1"
+    ]
+  },
+  {
+    "id": 55,
+    "code": "P20",
+    "fen": "r4rk1/ppp2p1p/6p1/8/3n4/2B5/PPP2PPP/R2Q1RK1 w - - 0 12",
+    "theme": "mateIn3",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Exploiter la grande diagonale a1-h8",
+    "solution": "1. Qxd4 f6 2. Qc4+ Kg7 3. Qxc7+",
+    "hint": "Capture le cavalier d4 en créant une menace de mat en g7/h8.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Qxd4",
+      "f6",
+      "Qc4+",
+      "Kg7",
+      "Qxc7+"
+    ]
+  },
+  {
+    "id": 56,
+    "code": "P21",
+    "fen": "8/2P5/8/8/8/8/5k2/7K w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "tactique",
+    "diff": 1,
+    "title": "Promotion directe c8=D",
+    "solution": "1. c8=Q",
+    "hint": "Pousse le pion.",
+    "side": "Blancs",
+    "solution_moves": [
+      "c8=Q"
+    ]
+  },
+  {
+    "id": 57,
+    "code": "P22",
+    "fen": "8/1P6/8/2k5/8/2K5/8/8 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 2,
+    "title": "Soutien de promotion",
+    "solution": "1. b8=Q",
+    "hint": "Le roi noir en c5 ne contrôle pas b8.",
+    "side": "Blancs",
+    "solution_moves": [
+      "b8=Q"
+    ]
+  },
+  {
+    "id": 58,
+    "code": "P23",
+    "fen": "8/5P2/8/4k3/8/4K3/8/8 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Promotion tactique f8=D",
+    "solution": "1. f8=Q",
+    "hint": "La case f8 est libre.",
+    "side": "Blancs",
+    "solution_moves": [
+      "f8=Q"
+    ]
+  },
+  {
+    "id": 59,
+    "code": "P24",
+    "fen": "8/3P1k2/8/3K4/8/8/8/8 w - - 0 1",
+    "theme": "advancedPawn",
+    "type": "calcul",
+    "diff": 3,
+    "title": "Course à la dame d8=D",
+    "solution": "1. d8=Q",
+    "hint": "Le pion d7 est soutenu par le roi d5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "d8=Q"
+    ]
+  },
+  {
+    "id": 60,
+    "code": "P25",
+    "fen": "r1bq1rk1/ppp2ppp/2np4/2b1p3/2B1P1n1/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 3 7",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Défense de f2 & chasse du cavalier",
+    "solution": "1. h3 Nf6 2. Be3",
+    "hint": "Chasse le cavalier g4 après avoir protégé f2 avec la tour f1.",
+    "side": "Blancs",
+    "solution_moves": [
+      "h3",
+      "Nf6",
+      "Be3"
+    ]
+  },
+  {
+    "id": 61,
+    "code": "P26",
+    "fen": "r2q1rk1/ppp1bppp/2np1n2/4p1B1/2B1P1b1/2NP1N2/PPP2PPP/R2Q1RK1 w - - 5 7",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 3,
+    "title": "Prophylaxie h3 contre Bg4",
+    "solution": "1. h3 Bxf3 2. Qxf3 Nd4 3. Qd1",
+    "hint": "Force le fou g4 à se déclarer et garde la case d1 pour la dame.",
+    "side": "Blancs",
+    "solution_moves": [
+      "h3",
+      "Bxf3",
+      "Qxf3",
+      "Nd4",
+      "Qd1"
+    ]
+  },
+  {
+    "id": 62,
+    "code": "P27",
+    "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 1 6",
+    "theme": "defensiveMove",
+    "type": "tactique",
+    "diff": 2,
+    "title": "Roque dans l'Est-Indienne",
+    "solution": "1. O-O Bg4 2. Be3",
+    "hint": "Roque puis consolide d4 avec Be3.",
+    "side": "Blancs",
+    "solution_moves": [
+      "O-O",
+      "Bg4",
+      "Be3"
+    ]
+  },
+  {
+    "id": 63,
+    "code": "P28",
+    "fen": "r2q1rk1/1pp1ppbp/p1np1np1/8/2PPP1b1/2N2N2/PP2BPPP/R1BQ1RK1 w - - 2 8",
+    "theme": "defensiveMove",
+    "type": "calcul",
+    "diff": 4,
+    "title": "Neutraliser l'activité noire en f3",
+    "solution": "1. Be3 Bxf3 2. Bxf3 e5 3. d5",
+    "hint": "Reprends du fou en f3 et ferme le centre avec d5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "Be3",
+      "Bxf3",
+      "Bxf3",
+      "e5",
+      "d5"
+    ]
+  },
+  {
+    "id": 64,
+    "code": "P29",
+    "fen": "r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 w - - 2 7",
+    "theme": "veryLong",
+    "type": "blind",
+    "diff": 4,
+    "title": "Vision Aveugle — Percée e4 Semi-Slave",
+    "solution": "1. b3 dxc4 2. bxc4 e5 3. Qc2 Re8 4. Bb2",
+    "hint": "Visualise 4 coups sans bouger les pièces : b3, dxc4, bxc4, e5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "b3",
+      "dxc4",
+      "bxc4",
+      "e5",
+      "Qc2",
+      "Re8",
+      "Bb2"
+    ]
+  },
+  {
+    "id": 65,
+    "code": "P30",
+    "fen": "r2q1rk1/pp1nbppp/2p1pn2/3p2B1/2PP4/2NBPN2/PPQ2PPP/2KR3R w - - 4 8",
+    "theme": "veryLong",
+    "type": "blind",
+    "diff": 5,
+    "title": "Vision Aveugle — Marée de pions h4-g4",
+    "solution": "1. h4 h6 2. Bf4 dxc4 3. Bxc4 Nd5 4. g4",
+    "hint": "Calcule à l'aveugle la retraite Bf4 et la poussée g4.",
+    "side": "Blancs",
+    "solution_moves": [
+      "h4",
+      "h6",
+      "Bf4",
+      "dxc4",
+      "Bxc4",
+      "Nd5",
+      "g4"
+    ]
+  },
+  {
+    "id": 66,
+    "code": "P31",
+    "fen": "2rq1rk1/pb1nbppp/1p2pn2/2pp4/2PP4/1PN1PN2/PB1NBPPP/2RQ1RK1 w - - 0 10",
+    "theme": "veryLong",
+    "type": "blind",
+    "diff": 4,
+    "title": "Vision Aveugle — Liquidation centrale",
+    "solution": "1. cxd5 exd5 2. dxc5 bxc5 3. Qc2",
+    "hint": "Visualise la structure des pions pendants après cxd5 et dxc5.",
+    "side": "Blancs",
+    "solution_moves": [
+      "cxd5",
+      "exd5",
+      "dxc5",
+      "bxc5",
+      "Qc2"
+    ]
+  },
+  {
+    "id": 67,
+    "code": "P32",
+    "fen": "r1b1qrk1/pp1n1pbp/2pp1np1/4p3/2PPP3/2N1BP2/PP1QB1PP/R4RK1 w - - 1 10",
+    "theme": "veryLong",
+    "type": "blind",
+    "diff": 5,
+    "title": "Vision Aveugle — Attaque Samisch d5",
+    "solution": "1. d5 cxd5 2. cxd5 a6 3. Rac1 Nh5 4. g3",
+    "hint": "Ferme le centre avec d5 et contrôle la colonne c.",
+    "side": "Blancs",
+    "solution_moves": [
+      "d5",
+      "cxd5",
+      "cxd5",
+      "a6",
+      "Rac1",
+      "Nh5",
+      "g3"
+    ]
+  }
+]

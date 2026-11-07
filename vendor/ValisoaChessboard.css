@@ -1,0 +1,149 @@
+/* Styles purs de ValisoaChessboard (Ne contient aucun style global) */
+.valisoa-board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1; /* Garantit que l'échiquier reste toujours un carré parfait */
+    border: 2px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    touch-action: none; /* Empêche le navigateur de scroller quand on glisse une pièce sur tactile */
+}
+
+.valisoa-square {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.valisoa-square.white {
+    background-color: #f0d9b5;
+    color: #b58863;
+}
+
+.valisoa-square.black {
+    background-color: #b58863;
+    color: #f0d9b5;
+}
+
+.valisoa-piece {
+    width: 90%;
+    height: 90%;
+    cursor: grab;
+    user-select: none;
+    z-index: 10;
+}
+
+.valisoa-piece:active {
+    cursor: grabbing;
+}
+
+/* --- INTERACTIVITÉ --- */
+/* Style de la pièce pendant qu'elle est soulevée (Drag) */
+.valisoa-piece.dragging {
+    position: fixed; /* Se détache de l'échiquier pour suivre le curseur exactement */
+    z-index: 1000; /* Passe par dessus tout le reste */
+    pointer-events: none; /* Laisse passer le curseur pour détecter la case d'arrivée en dessous */
+    transform: scale(1.15); /* Effet d'agrandissement pour donner l'impression de la soulever */
+    transition: transform 0.1s;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); /* Belle ombre portée */
+}
+
+/* Style de la case sélectionnée pour le Click-to-Move */
+.valisoa-square.selected::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 85, 30, 0.4); /* Voile vert transparent */
+    z-index: 5; /* Au dessus de la couleur de la case, mais en dessous de la pièce */
+}
+
+/* Style des cases du dernier coup joué (départ et arrivée) */
+.valisoa-square.highlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 199, 0, 0.41); /* Vert/Jaune clair (style Chess.com) */
+    z-index: 4; /* En dessous de la sélection */
+}
+
+/* Style des pre-moves (Phase 7 - Lichess) */
+.valisoa-square.premove::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 30, 30, 0.5); /* Rouge transparent */
+    z-index: 4;
+}
+
+/* --- PROMOTION MENU --- */
+.valisoa-promotion-menu {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+}
+
+.valisoa-promotion-menu.down {
+    top: 0;
+}
+
+.valisoa-promotion-menu.up {
+    bottom: 0;
+    flex-direction: column-reverse; /* Garde la Reine sur la case d'arrivée pour les pions noirs */
+}
+
+.valisoa-promotion-piece {
+    width: 100%;
+    aspect-ratio: 1; /* Reste carré */
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background 0.1s;
+}
+
+.valisoa-promotion-piece:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* --- NOTATIONS (Coordonnées) --- */
+.valisoa-notation {
+    position: absolute;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    user-select: none;
+    pointer-events: none; /* Ne doit pas gêner les clics sur la case */
+    z-index: 2; /* Sous la pièce, sur la case */
+}
+
+.valisoa-notation.alpha {
+    bottom: 2px;
+    right: 3px;
+}
+
+.valisoa-notation.numeric {
+    top: 2px;
+    left: 3px;
+}
+
+/* Couleurs des notations selon la couleur de la case (contraste) */
+.valisoa-square.white .valisoa-notation {
+    color: #739552; /* Vert foncé sur case claire */
+}
+.valisoa-square.black .valisoa-notation {
+    color: #ebecd0; /* Blanc cassé sur case sombre */
+}
+
