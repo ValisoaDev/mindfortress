@@ -88,7 +88,8 @@ async function apiHandler(req, res, customUrl = null) {
   }
 
   const parsedUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
-  const pathname = parsedUrl.pathname.replace(/\/+$/, "") || "/";
+  const rawPath = parsedUrl.searchParams.get("__path") || parsedUrl.pathname;
+  const pathname = rawPath.replace(/\/+$/, "") || "/";
 
   try {
     const client = await ensureDbReady(customUrl);
