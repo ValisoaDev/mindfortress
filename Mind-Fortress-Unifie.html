@@ -4408,17 +4408,17 @@ function Oa() {
             d("div", {
               className: "ml-auto flex items-center gap-2 flex-wrap",
               children: [
-                d("button", {
-                  onClick: triggerManualBackup,
-                  title: "Cliquer pour créer une sauvegarde SQLite (.db)",
-                  className: "hidden lg:flex items-center gap-1.5 text-[11px] px-3 py-1.5 rounded-full bg-[#181826] border border-[#26263A] text-[#C9CAD9] hover:border-[#5B8CFF]",
+                d("div", {
+                  title: dbPathLabel || "Base de données synchronisée",
+                  className: "hidden lg:flex items-center gap-1.5 text-[11px] px-3 py-1.5 rounded-full bg-[#181826] border border-[#26263A] text-[#C9CAD9]",
                   children: [
                     f("span", {
                       className: `w-2 h-2 rounded-full ${sqlMode === "sqlite_native" ? "bg-emerald-400" : "bg-[#FFD700]"}`
                     }),
                     f(DbIcon, { size: 13, className: "text-[#5B8CFF]" }),
-                    sqlMode === "sqlite_native" ? "SQLite Natif · mind_fortress.db" : "SQLite Local · Export .db",
-                    f("span", { className: "text-[10px] px-1.5 py-0.5 rounded bg-[#5B8CFF]/20 text-[#AFC6FF] font-bold ml-1", children: "Backup" })
+                    sqlMode === "sqlite_native"
+                      ? (String(dbPathLabel || "").startsWith("libsql://") ? "Turso Cloud · Connecté" : "SQLite Natif · Connecté")
+                      : "Mode Hors-Ligne"
                   ]
                 }),
                 f("div", {
