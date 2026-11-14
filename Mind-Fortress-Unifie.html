@@ -1942,6 +1942,7 @@ input:focus,textarea:focus,select:focus{
   .xl\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 </style>
+<link rel="icon" type="image/svg+xml" href="img/chesspieces/wikipedia/wN.svg">
 <link rel="stylesheet" href="vendor/ValisoaChessboard.css">
 <script src="vendor/ValisoaChessLite.js"></script>
 <script src="vendor/ValisoaChessboard.js"></script>
@@ -4367,6 +4368,7 @@ function Oa() {
 
   let avgBaseline = ((baselineScores.memoire + baselineScores.focus + baselineScores.emotion + baselineScores.clarte) / 4).toFixed(1);
   let checkedGridCount = Object.values(weeklyGrid).filter(Boolean).length;
+  let ba = W[0] || null;
 
   return d("div", {
     className: "min-h-screen bg-[var(--bg)] text-[var(--text)]",
