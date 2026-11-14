@@ -168,7 +168,9 @@ function createNativeSqliteClient(dbUrl, authToken) {
 
     const db = new DatabaseSync(filePath);
     db.exec("PRAGMA foreign_keys = ON;");
-    db.exec("PRAGMA journal_mode = WAL;");
+    try {
+      db.exec("PRAGMA journal_mode = WAL;");
+    } catch (_e) {}
 
     return {
       driver: "node:sqlite (Native C SQLite)",
@@ -232,8 +234,15 @@ function createNativeSqliteClient(dbUrl, authToken) {
 let activeClient = null;
 let activeUrl = null;
 
+function getDefaultLocalDbPath() {
+  if (process.env.VERCEL) {
+    return path.join("/tmp", "mind_fortress.db");
+  }
+  return path.join(__dirname, "..", "mind_fortress.db");
+}
+
 function getDbClient(customUrl) {
-  const defaultPath = path.join(__dirname, "..", "mind_fortress.db");
+  const defaultPath = getDefaultLocalDbPath();
   const targetUrl = customUrl || process.env.TURSO_DATABASE_URL || `file:${defaultPath}`;
   const authToken = process.env.TURSO_AUTH_TOKEN || "";
 
@@ -250,7 +259,7 @@ function getDbClient(customUrl) {
 }
 
 function resolveLocalDbFilePath(customUrl) {
-  const defaultPath = path.join(__dirname, "..", "mind_fortress.db");
+  const defaultPath = getDefaultLocalDbPath();
   const targetUrl = customUrl || process.env.TURSO_DATABASE_URL || `file:${defaultPath}`;
   if (targetUrl.startsWith("libsql://") || targetUrl.startsWith("https://")) {
     return null; // Base hébergée sur Turso Cloud

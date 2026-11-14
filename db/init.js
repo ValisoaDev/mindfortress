@@ -14,7 +14,7 @@ const { computeAdvancedAnalytics } = require("./analytics");
 const BASE_DIR = path.join(__dirname, "..");
 const SCHEMA_PATH = path.join(__dirname, "schema.sql");
 const SEED_PUZZLES_PATH = path.join(__dirname, "seed_puzzles.json");
-const BACKUP_DIR = path.join(BASE_DIR, "backups");
+const BACKUP_DIR = process.env.VERCEL ? path.join("/tmp", "backups") : path.join(BASE_DIR, "backups");
 
 async function ensureColumns(client, tableName, columnDefs) {
   const tableCheck = await client.execute({

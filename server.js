@@ -89,4 +89,10 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createAppServer };
+const defaultServerInstance = createAppServer();
+function vercelRequestHandler(req, res) {
+  return defaultServerInstance.emit("request", req, res);
+}
+vercelRequestHandler.createAppServer = createAppServer;
+
+module.exports = vercelRequestHandler;
